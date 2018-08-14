@@ -1,5 +1,7 @@
 # Market-Basket-Analysis
 
+This work was done as part of INF-553 (Foundatiosn and Applicatiosn of Data Mining) coursework at USC
+
 • Implemented SON and Apriori algorithms for finding pairs of movies that are frequently (that is, greater than a certain support threshold) rated together by users. This was built using Python, and on top of Apache Spark framework. Extended the implementation further to find frequent triples, quadruples, and so on.
 
 • I used three different datasets, ranging from very small to very large.
