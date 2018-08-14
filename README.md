@@ -10,18 +10,16 @@
 I have used Python 2.7 and Spark 2.2.1 to complete this assignment
 
 <b>Command to execute the program</b>-
-Name of python file: Nupur_Shukla_SON.py
-
-Command to run (on Mac terminal): $SPARK_HOME/bin/spark-submit <Path of Nupur_Shukla_SON.py> <case_number> <Path of input csv file> <support>
+>$SPARK_HOME/bin/spark-submit Nupur_Shukla_SON.py case_number input_csv_file support
 
 Example: $SPARK_HOME/bin/spark-submit Nupur_Shukla_SON.py 1 Data/Small1.csv 4
 
 This command will generate an output file in the directory from where the command is run. The format of the output file name will be “Nupur_Shukla_SON_<Filename>.case<case>-<support>.txt”. For instance, for the above command, output file name will be -
 Nupur_Shukla_SON_Small1.case1-4.txt
 
-Note: Case number can only be either 1 or 2, for any other cases the program won’t run as expected.
-Note: Paths can be relative to current directory or absolute.
-Note: There should NOT be any spaces in the file path or file name
+Note: Case number can only be either 1 or 2, for any other cases the program won’t run as expected.<br/>
+Note: Paths can be relative to current directory or absolute.<br/>
+Note: There should NOT be any spaces in the file path or file name<br/>
 
 <b>Approach used to implement the program</b>-
 In this program I have implemented 2 algorithms – SON and Apriori. According to SON algorithm, the input baskets gets partitioned into chunks. In phase 1, for each chunk I have implemented Apriori algorithm to find (local) frequent itemsets of all sizes. This is done by generating singletons candidates (C1), filtering them to form frequent singletons (L1) and then generating candidate pairs from L1, filtering them to form frequent pairs (L2) and then C3 -> L3 -> C4 and so on...until there are no more candidate itemsets. 
