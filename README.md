@@ -29,31 +29,36 @@ In the second phase of SON, again the input baskets get partitioned into chunks,
 
 <b>Dataset 1</b><br/>
 Case1 
-$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 1 Data/Small2.csv 3
+>$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 1 Data/Small2.csv 3 <br/>
+
 Output file: Nupur_Shukla_SON_Small2.case1-3.txt
 
-
 Case2
-$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 2 Data/Small2.csv 5
+>$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 2 Data/Small2.csv 5 <br/>
+
 Output file: Nupur_Shukla_SON_Small2.case2-5.txt
 
 <b>Dataset 2</b><br/>
 The dataset can be downloaded from https://grouplens.org/datasets/movielens/ : ml-latest-small.zip <br/>
 Case1
 >$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 1 ml-latest-small/ratings.csv 120 <br/>
+
 Output file: Nupur_Shukla_SON_MovieLens.Small.case1-120.txt <br/>
 <u>Execution Time </u>: 6 sec
 
 >$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 1 ml-latest-small/ratings.csv 150 <br/>
+
 Output file: Nupur_Shukla_SON_MovieLens.Small.case1-150.txt <br/>
 <u>Execution Time </u>: 5 sec
 
 Case2
 >$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 2 ml-latest-small/ratings.csv 180 <br/>
+
 Output file: Nupur_Shukla_SON_MovieLens.Small.case2-180.txt <br/>
 <u>Execution Time </u>: 24 sec
 
 >$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 2 ml-latest-small/ratings.csv 200 <br/>
+
 Output file: Nupur_Shukla_SON_MovieLens.Small.case2-200.txt <br/>
 <u>Execution Time </u>: 19 sec
 
@@ -61,19 +66,23 @@ Output file: Nupur_Shukla_SON_MovieLens.Small.case2-200.txt <br/>
 <b>Dataset 3</b>
 The dataset can be downloaded from https://grouplens.org/datasets/movielens/ : ml-20m.zip <br/>
 Case1
-$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 1 ml-20m/MovieLens.Big.csv 30000 <br/>
+>$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 1 ml-20m/ratings.csv 30000 <br/>
+
 Output file: Nupur_Shukla_SON_MovieLens.Big.case1-30000.txt <br/>
 <u>Execution Time </u>: 114 sec
 
-$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 1 ml-20m/MovieLens.Big.csv 35000 <br/>
+>$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 1 ml-20m/ratings.csv 35000 <br/>
+
 Output file: Nupur_Shukla_SON_MovieLens.Big.case1-35000.txt <br/>
 <u>Execution Time </u>: 85 sec
 
 Case2
-$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 2 ml-20m/MovieLens.Big.csv 2800 <br/>
+>$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 2 ml-20m/ratings.csv 2800 <br/>
+
 Output file: Nupur_Shukla_SON_MovieLens.Big.case2-2800.txt <br/>
 <u>Execution Time </u>: 75 sec
 
-$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 2 ml-20m/MovieLens.Big.csv 3000 <br/>
+>$SPARK_HOME/bin/spark-submit Solution/Nupur_Shukla_SON.py 2 ml-20m/ratings.csv 3000 <br/>
+
 Output file: Nupur_Shukla_SON_MovieLens.Big.case2-3000.txt <br/>
 <u>Execution Time </u>: 73 sec
